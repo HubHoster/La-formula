@@ -28,7 +28,7 @@ export const ServicesSection = () => {
     },
     {
       icon: Briefcase,
-      title: 'Top-Level',
+      title: t('services.top_level_portfolio').split(' ')[0],
       subtitle: t('services.top_level_portfolio').split(' ').slice(1).join(' '),
       description: t('services.portfolio_description'),
       gradient: 'from-primary to-accent'

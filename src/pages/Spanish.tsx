@@ -1,5 +1,5 @@
 import { HomePage } from "@/components/HomePage";
 
-const Spanish = () => <HomePage lang="es" />;
+const Spanish = () => <HomePage />;
 
 export default Spanish;

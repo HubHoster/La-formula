@@ -13,35 +13,48 @@ import { useLanguage } from '@/contexts/LanguageContext';
 export const Header = () => {
   const { lang, setLanguage, t } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const basePath = lang === 'es' ? '/spanish' : '';
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-border/20 h-24">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <Link to={lang === 'es' ? '/spanish' : '/'} className="flex items-center space-x-3">
             <img
               src="https://www.laformulacg.net/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=128&q=75"
               alt="La Formula Capital Group"
-              className="h-20 w-auto"
+              className="h-20 w-auto cursor-pointer"
               id="logo"
             />
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a
-              href="#services"
+            <Link
+              to={`${basePath}/services`}
               className="text-foreground hover:text-primary transition-colors"
             >
-              {t("header.services")}  {/* This matches the key in translations.ts */}
-            </a>
-            <a
-              href="#about"
+              {t("header.services")}
+            </Link>
+            <Link
+              to={`${basePath}/about`}
               className="text-foreground hover:text-primary transition-colors"
             >
-              {t("header.about")}  {/* This matches the key in translations.ts */}
-            </a>
+              {t("header.about")}
+            </Link>
+            <Link
+              to={`${basePath}/contact`}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              {t("header.contact")}
+            </Link>
+            <Link
+              to={`${basePath}/careers`}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              {t("header.careers")}
+            </Link>
 
             {/* Language Dropdown */}
             <DropdownMenu>
@@ -86,21 +99,37 @@ export const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden mt-4 space-y-4 border-t border-border/20 pt-4">
-            <a
-              href="#services"
+            <Link
+              to={`${basePath}/services`}
               className="block text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
             >
               {t("header.services")}
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              to={`${basePath}/about`}
               className="block text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
             >
               {t("header.about")}
-            </a>
+            </Link>
+            <Link
+              to={`${basePath}/contact`}
+              className="block text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t("header.contact")}
+            </Link>
+            <Link
+              to={`${basePath}/careers`}
+              className="block text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t("header.careers")}
+            </Link>
 
             <div className="space-y-2">
-              <p className="text-sm text-muted-foreground">Languages:</p>
+              <p className="text-sm text-muted-foreground">{t('header.languages')}:</p>
               <div className="pl-4 space-y-1">
                 <button 
                   onClick={() => {

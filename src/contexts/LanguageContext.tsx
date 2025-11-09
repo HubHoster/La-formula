@@ -45,7 +45,8 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
       const path = location.pathname;
       debugLog('Initializing language from path', { path });
       
-      const newLang = path === '/spanish' ? 'es' : 'en';
+      // Check if path starts with /spanish
+      const newLang = path.startsWith('/spanish') ? 'es' : 'en';
       
       // Only update if the language is actually changing
       if (newLang !== lang) {
@@ -79,8 +80,19 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
       }
       
       // Update URL and navigate without page reload
-      const newPath = newLang === 'es' ? '/spanish' : '/';
-      const newUrl = newPath + location.search + location.hash;
+      // Preserve the current page path when switching languages
+      let currentPath = location.pathname;
+      
+      // Remove /spanish prefix if switching to English
+      if (newLang === 'en' && currentPath.startsWith('/spanish')) {
+        currentPath = currentPath.replace('/spanish', '') || '/';
+      }
+      // Add /spanish prefix if switching to Spanish
+      else if (newLang === 'es' && !currentPath.startsWith('/spanish')) {
+        currentPath = '/spanish' + currentPath;
+      }
+      
+      const newUrl = currentPath + location.search + location.hash;
       debugLog('Navigating to', newUrl);
       
       navigate(newUrl, { replace: true });
@@ -98,7 +110,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     } finally {
       setIsLoading(false);
     }
-  }, [lang, location.search, location.hash, navigate]);
+  }, [lang, location.search, location.hash, location.pathname, navigate]);
 
   // Translation function that handles dot notation keys in the translations object
   const t = (key: string): string => {
