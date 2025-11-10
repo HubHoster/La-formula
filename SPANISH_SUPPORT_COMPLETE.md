@@ -110,7 +110,7 @@ All home page sections use the `useLanguage()` hook and translation keys:
 - Uses: `privacy.*`, `common.back_to_home`
 - **Spanish Keys Present (All Detailed Sections):**
   - "privacy.page_title" → "Política de Privacidad"
-  - "privacy.last_updated" → "Última actualización: 3 de octubre de 2024"
+  - "privacy.last_updated" → "Última actualización: 3 de octubre de 2025"
   - "privacy.collection_title" → "1. Qué Datos Recopilamos"
   - All 5 data types translated (Identity, Contact, Business, Financial, Technical)
   - "privacy.usage_title" → "2. Cómo Usamos sus Datos"
@@ -126,7 +126,7 @@ All home page sections use the `useLanguage()` hook and translation keys:
 - Uses: `cookies.*`, `common.back_to_home`
 - **Spanish Keys Present (All Detailed Sections):**
   - "cookies.page_title" → "Política de Cookies"
-  - "cookies.last_updated" → "Última actualización: 3 de octubre de 2024"
+  - "cookies.last_updated" → "Última actualización: 3 de octubre de 2025"
   - "cookies.what_title" → "1. Qué son las Cookies"
   - "cookies.how_we_use_title" → "2. Cómo Usamos las Cookies"
   - All 4 cookie types translated (Necessary, Analytics, Preferences, Marketing)

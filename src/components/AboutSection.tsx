@@ -72,7 +72,7 @@ export const AboutSection = () => {
         
         {/* Network background splash */}
         <motion.div 
-          className="absolute top-1/2 right-0 w-[1200px] h-[1200px] -translate-y-1/2"
+          className="absolute top-1/2 right-0 w-[1200px] h-[1200px] -translate-y-1/2 hidden md:block"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 0.4, scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
@@ -86,7 +86,7 @@ export const AboutSection = () => {
 
         {/* Animated globe splash */}
         <motion.div 
-          className="absolute top-1/2 -right-40 w-[600px] h-[600px] -translate-y-1/2 mix-blend-screen"
+          className="absolute top-1/2 -right-40 w-[600px] h-[600px] -translate-y-1/2 mix-blend-screen hidden md:block"
           initial={{ opacity: 0, rotate: -30, scale: 0.8 }}
           animate={{ opacity: 0.8, rotate: 0, scale: 1 }}
           transition={{ 
@@ -113,7 +113,7 @@ export const AboutSection = () => {
         
         {/* Animated light effects */}
         <motion.div 
-          className="absolute top-1/2 right-1/4 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl"
+          className="absolute top-1/2 right-1/4 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl hidden md:block"
           animate={{
             scale: [1, 1.1, 1],
             opacity: [0.3, 0.5, 0.3]
@@ -146,19 +146,19 @@ export const AboutSection = () => {
             }}
           >
             <div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6">
                 {t('about.section_title') || 'About La Formula Capital Group'}
               </h2>
-              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
                 {t('about.section_description') || 'We are a specialized consulting firm dedicated to enhancing business efficiency and competitiveness through innovative B2B solutions. Our comprehensive approach combines strategic planning, process optimization, and cutting-edge technology to deliver measurable results.'}
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
                 {t('about.section_focus') || 'With a focus on corporate structure development, global business centralization, and strategic partnerships, we empower organizations to achieve their full potential in today\'s competitive marketplace.'}
               </p>
             </div>
 
             <motion.div 
-              className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6"
               variants={{
                 hidden: { opacity: 0 },
                 visible: {
@@ -175,7 +175,7 @@ export const AboutSection = () => {
                 return (
                   <motion.div
                     key={index}
-                    className="flex items-start space-x-4 p-4 rounded-xl glass-card hover-glow group"
+                    className="flex items-start space-x-3 sm:space-x-4 p-3 sm:p-4 rounded-xl glass-card hover-glow group"
                     variants={fadeInUp}
                     whileHover={{ 
                       y: -5,
@@ -184,16 +184,16 @@ export const AboutSection = () => {
                     transition={{ type: 'spring', stiffness: 300 }}
                   >
                     <motion.div 
-                      className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
+                      className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
                       whileHover={{ rotate: 10 }}
                     >
-                      <IconComponent className="w-6 h-6 text-white" />
+                      <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </motion.div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2">
+                      <h3 className="font-semibold text-foreground mb-1 sm:mb-2">
                         {highlight.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-xs sm:text-sm text-muted-foreground">
                         {highlight.description}
                       </p>
                     </div>
@@ -225,7 +225,7 @@ export const AboutSection = () => {
           
           {/* Visual Element */}
           <motion.div 
-            className="relative"
+            className="relative mt-8 lg:mt-0"
             initial={{ opacity: 0, x: 50 }}
             animate={{ 
               opacity: 1, 
@@ -237,14 +237,14 @@ export const AboutSection = () => {
               stiffness: 100
             }}
           >
-            <div className="relative z-10 glass-card p-8 rounded-3xl ml-36">
-              <div className="space-y-6">
+            <div className="relative z-10 glass-card p-6 md:p-8 rounded-3xl ml-0 md:ml-36 max-w-md md:max-w-none mx-auto">
+              <div className="space-y-4 sm:space-y-6">
                 {stats.map((stat, index) => (
                   <div key={index}>
-                    {index > 0 && <div className="h-px bg-gradient-primary w-full my-4" />}
+                    {index > 0 && <div className="h-px bg-gradient-primary w-full my-3 sm:my-4" />}
                     <div className="text-center">
-                      <div className="text-4xl font-bold gradient-text mb-2">{stat.value}</div>
-                      <div className="text-muted-foreground">{stat.label}</div>
+                      <div className="text-3xl sm:text-4xl font-bold gradient-text mb-1 sm:mb-2">{stat.value}</div>
+                      <div className="text-sm sm:text-base text-muted-foreground">{stat.label}</div>
                     </div>
                   </div>
                 ))}

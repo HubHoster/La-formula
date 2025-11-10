@@ -37,7 +37,7 @@ Successfully created and updated all requested pages with complete bilingual sup
 
 ### 5. **Privacy Policy** (`/privacy` | `/spanish/privacy`)
 **Updated with detailed content as requested:**
-- ✅ Last updated: October 3, 2024
+- ✅ Last updated: October 3, 2025
 - ✅ Section 1: What Data We Collect
   - Identity Data
   - Contact Data
@@ -70,7 +70,7 @@ Successfully created and updated all requested pages with complete bilingual sup
 
 ### 6. **Cookies Policy** (`/cookies` | `/spanish/cookies`)
 **Updated with detailed content as requested:**
-- ✅ Last updated: October 3, 2024
+- ✅ Last updated: October 3, 2025
 - ✅ Section 1: What Are Cookies
 - ✅ Section 2: How We Use Cookies
   - Necessary cookies
@@ -121,7 +121,7 @@ Successfully created and updated all requested pages with complete bilingual sup
 - Privacy Policy: Complete with all 4 sections and bullet points
 - Cookies Policy: Complete with all 5 sections
 - Contact information: web@laformulacg.net and United States location
-- Last updated dates: October 3, 2024
+- Last updated dates: October 3, 2025
 
 ### ✅ Consistent Design
 - Glass-card styling throughout
@@ -176,7 +176,7 @@ Successfully created and updated all requested pages with complete bilingual sup
 - **Email**: careers@laformulacg.net (for Careers)
 - **Email**: info@laformulacg.net (general contact)
 - **Location**: United States
-- **Last Updated**: October 3, 2024
+- **Last Updated**: October 3, 2025
 
 ## Next Steps (Optional)
 

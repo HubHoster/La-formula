@@ -172,7 +172,7 @@ const translations = {
     
     // Privacy Policy Page
     "privacy.page_title": "Privacy Policy",
-    "privacy.last_updated": "Last updated: October 3, 2024",
+    "privacy.last_updated": "Last updated: October 3, 2025",
     "privacy.intro_title": "Our Commitment to Privacy",
     "privacy.intro_text": "At La Formula Capital Group, we respect your privacy and are committed to protecting your personal data. This privacy policy will inform you how we look after your personal data when you visit our website and tell you about your privacy rights.",
     "privacy.collection_title": "1. What Data We Collect",
@@ -217,7 +217,7 @@ const translations = {
     
     // Cookies Page
     "cookies.page_title": "Cookies Policy",
-    "cookies.last_updated": "Last updated: October 3, 2024",
+    "cookies.last_updated": "Last updated: October 3, 2025",
     "cookies.intro_title": "About Cookies",
     "cookies.intro_text": "This Cookies Policy explains what cookies are and how we use them on our website. You should read this policy to understand what cookies are, how we use them, and your choices regarding cookies.",
     "cookies.what_title": "1. What Are Cookies",
@@ -419,7 +419,7 @@ const translations = {
     
     // Privacy Policy Page
     "privacy.page_title": "Política de Privacidad",
-    "privacy.last_updated": "Última actualización: 3 de octubre de 2024",
+    "privacy.last_updated": "Última actualización: 3 de octubre de 2025",
     "privacy.intro_title": "Nuestro Compromiso con la Privacidad",
     "privacy.intro_text": "En La Formula Capital Group, respetamos su privacidad y estamos comprometidos a proteger sus datos personales. Esta política de privacidad le informará cómo cuidamos sus datos personales cuando visita nuestro sitio web y le informará sobre sus derechos de privacidad.",
     "privacy.collection_title": "1. Qué Datos Recopilamos",
@@ -460,7 +460,7 @@ const translations = {
     
     // Cookies Page
     "cookies.page_title": "Política de Cookies",
-    "cookies.last_updated": "Última actualización: 3 de octubre de 2024",
+    "cookies.last_updated": "Última actualización: 3 de octubre de 2025",
     "cookies.intro_title": "Acerca de las Cookies",
     "cookies.intro_text": "Esta Política de Cookies explica qué son las cookies y cómo las usamos en nuestro sitio web. Debe leer esta política para comprender qué son las cookies, cómo las usamos y sus opciones con respecto a las cookies.",
     "cookies.what_title": "1. Qué son las Cookies",

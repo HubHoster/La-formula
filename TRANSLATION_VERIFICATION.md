@@ -108,7 +108,7 @@ All pages have complete Spanish translations with no conflicts detected.
 ### ✅ Privacy Policy Page (`privacy.*`)
 **English Keys (Detailed):**
 - privacy.page_title → "Privacy Policy"
-- privacy.last_updated → "Last updated: October 3, 2024"
+- privacy.last_updated → "Last updated: October 3, 2025"
 - privacy.collection_title → "1. What Data We Collect"
 - privacy.identity_data → "Identity Data: Includes first name, last name..."
 - privacy.contact_data → "Contact Data: Includes billing address..."
@@ -127,7 +127,7 @@ All pages have complete Spanish translations with no conflicts detected.
 
 **Spanish Keys (Detailed):**
 - privacy.page_title → "Política de Privacidad"
-- privacy.last_updated → "Última actualización: 3 de octubre de 2024"
+- privacy.last_updated → "Última actualización: 3 de octubre de 2025"
 - privacy.collection_title → "1. Qué Datos Recopilamos"
 - privacy.identity_data → "Datos de Identidad: Incluye nombre, apellido..."
 - privacy.contact_data → "Datos de Contacto: Incluye dirección de facturación..."
@@ -149,7 +149,7 @@ All pages have complete Spanish translations with no conflicts detected.
 ### ✅ Cookies Policy Page (`cookies.*`)
 **English Keys (Detailed):**
 - cookies.page_title → "Cookies Policy"
-- cookies.last_updated → "Last updated: October 3, 2024"
+- cookies.last_updated → "Last updated: October 3, 2025"
 - cookies.what_title → "1. What Are Cookies"
 - cookies.how_we_use_title → "2. How We Use Cookies"
 - cookies.essential_title → "Necessary"
@@ -164,7 +164,7 @@ All pages have complete Spanish translations with no conflicts detected.
 
 **Spanish Keys (Detailed):**
 - cookies.page_title → "Política de Cookies"
-- cookies.last_updated → "Última actualización: 3 de octubre de 2024"
+- cookies.last_updated → "Última actualización: 3 de octubre de 2025"
 - cookies.what_title → "1. Qué son las Cookies"
 - cookies.how_we_use_title → "2. Cómo Usamos las Cookies"
 - cookies.essential_title → "Necesarias"

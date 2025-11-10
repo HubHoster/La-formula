@@ -139,7 +139,7 @@ const basePath = lang === 'es' ? '/spanish' : '';
 ### Translation Keys Used (All Sections):
 - ✅ `common.back_to_home` → "Volver al Inicio"
 - ✅ `privacy.page_title` → "Política de Privacidad"
-- ✅ `privacy.last_updated` → "Última actualización: 3 de octubre de 2024"
+- ✅ `privacy.last_updated` → "Última actualización: 3 de octubre de 2025"
 - ✅ `privacy.intro_title` → "Nuestro Compromiso con la Privacidad"
 - ✅ `privacy.intro_text` → Full Spanish text
 
@@ -203,7 +203,7 @@ const basePath = lang === 'es' ? '/spanish' : '';
 ### Translation Keys Used (All Sections):
 - ✅ `common.back_to_home` → "Volver al Inicio"
 - ✅ `cookies.page_title` → "Política de Cookies"
-- ✅ `cookies.last_updated` → "Última actualización: 3 de octubre de 2024"
+- ✅ `cookies.last_updated` → "Última actualización: 3 de octubre de 2025"
 - ✅ `cookies.intro_title` → "Acerca de las Cookies"
 - ✅ `cookies.intro_text` → Full Spanish text
 
