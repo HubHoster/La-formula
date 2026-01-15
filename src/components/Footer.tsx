@@ -18,17 +18,32 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="flex items-center space-x-3">
-              <img src= {logoHD} alt="La Formula Capital Group" className="h-20 w-max" />
+            <div className="flex items-center">
+              <img
+                src={logoHD}
+                alt="La Formula Capital Group"
+                className="
+                  w-full
+                  max-w-[180px]
+                  sm:max-w-[200px]
+                  md:max-w-[220px]
+                  h-auto
+                  object-contain
+                "
+              />
             </div>
+
             <p className="text-muted-foreground leading-relaxed">
-              {t('footer.tagline') || 'Enhancing business efficiency and competitiveness with specialized B2B solutions. La Formula Capital Group - Your success is our formula.'}
+              {t('footer.tagline') ||
+                'Enhancing business efficiency and competitiveness with specialized B2B solutions. La Formula Capital Group - Your success is our formula.'}
             </p>
           </div>
 
           {/* Services */}
           <div className="space-y-6">
-            <h3 className="text-lg font-semibold gradient-text">{t('footer.services') || 'Services'}</h3>
+            <h3 className="text-lg font-semibold gradient-text">
+              {t('footer.services') || 'Services'}
+            </h3>
             <ul className="space-y-3 text-muted-foreground">
               <li><a href="#process" className="hover:text-primary transition-colors">{t('footer.process_optimization') || 'Process Optimization'}</a></li>
               <li><a href="#services" className="hover:text-primary transition-colors">{t('footer.corporate_solutions') || 'Corporate Solutions'}</a></li>
@@ -41,7 +56,9 @@ export const Footer = () => {
 
           {/* Company */}
           <div className="space-y-6">
-            <h3 className="text-lg font-semibold gradient-text">{t('footer.company') || 'Company'}</h3>
+            <h3 className="text-lg font-semibold gradient-text">
+              {t('footer.company') || 'Company'}
+            </h3>
             <ul className="space-y-3 text-muted-foreground">
               <li><Link to={`${basePath}/about`} className="hover:text-primary transition-colors">{t('footer.about_us') || 'About Us'}</Link></li>
               <li><a href="#about" className="hover:text-primary transition-colors">{t('footer.our_team') || 'Our Team'}</a></li>
@@ -54,15 +71,21 @@ export const Footer = () => {
 
           {/* Contact */}
           <div className="space-y-6">
-            <h3 className="text-lg font-semibold gradient-text">{t('footer.contact') || 'Contact'}</h3>
+            <h3 className="text-lg font-semibold gradient-text">
+              {t('footer.contact') || 'Contact'}
+            </h3>
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-card rounded-lg flex items-center justify-center">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">{t('footer.email') || 'Email'}</p>
-                  <p className="text-foreground">{t('footer.email_address') || 'contact@laformulacg.net'}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {t('footer.email') || 'Email'}
+                  </p>
+                  <p className="text-foreground">
+                    {t('footer.email_address') || 'contact@laformulacg.net'}
+                  </p>
                 </div>
               </div>
             </div>
@@ -72,10 +95,19 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border/20 text-center">
           <p className="text-muted-foreground">
-            © {new Date().getFullYear()} La Formula Capital Group. {t('footer.all_rights_reserved') || 'All rights reserved.'} | 
-            <Link to={`${basePath}/privacy`} className="ml-1 hover:text-primary transition-colors">{t('footer.privacy_policy') || 'Privacy Policy'}</Link> | 
-            <Link to={`${basePath}/terms`} className="ml-1 hover:text-primary transition-colors">{t('footer.terms_of_service') || 'Terms of Service'}</Link> | 
-            <Link to={`${basePath}/cookies`} className="ml-1 hover:text-primary transition-colors">Cookies</Link>
+            © {new Date().getFullYear()} La Formula Capital Group.{' '}
+            {t('footer.all_rights_reserved') || 'All rights reserved.'} |{' '}
+            <Link to={`${basePath}/privacy`} className="ml-1 hover:text-primary transition-colors">
+              {t('footer.privacy_policy') || 'Privacy Policy'}
+            </Link>{' '}
+            |{' '}
+            <Link to={`${basePath}/terms`} className="ml-1 hover:text-primary transition-colors">
+              {t('footer.terms_of_service') || 'Terms of Service'}
+            </Link>{' '}
+            |{' '}
+            <Link to={`${basePath}/cookies`} className="ml-1 hover:text-primary transition-colors">
+              Cookies
+            </Link>
           </p>
         </div>
       </div>
