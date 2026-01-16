@@ -60,7 +60,7 @@ export const ProcessOptimizationSection = () => {
 
           <div className="relative flex justify-center lg:justify-end items-stretch">
             <img
-              src="@/assets/Mobile%20Formula.png"
+              src="@/assets/mobile-svg.svg"
               alt={altText}
               className="h-full w-auto object-contain"
             />
