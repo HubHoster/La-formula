@@ -1,5 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import mobileSVG from '@/assets/mobile-svg.svg';
+import {mobileSVG} from '@/assets/Mobile%20Formula.png';
 
 export const ProcessOptimizationSection = () => {
   const { t } = useLanguage();
